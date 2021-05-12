@@ -38,7 +38,8 @@ public class Student implements StudyCapatable {
 
     @Override
     public void study() {
-        System.out.println(name + ":学习中");
+        System.out.println("在study方法中调用play方法");
+        play();
     }
 
     @Override

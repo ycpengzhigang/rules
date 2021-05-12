@@ -20,9 +20,7 @@ public class JdkProxy {
                 studentPlay);
 
         studyCapatable.study();
-        studyCapatable.play();
-        studyCapatable.hashCode();
-        studyCapatable.toString();
+
     }
 
 
