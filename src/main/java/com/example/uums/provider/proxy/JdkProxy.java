@@ -9,6 +9,7 @@ import java.lang.reflect.Proxy;
 public class JdkProxy {
 
     public static void main(String[] args) {
+
         System.setProperty("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
 
         StudyCapatable student = new Student("志刚", 24);
