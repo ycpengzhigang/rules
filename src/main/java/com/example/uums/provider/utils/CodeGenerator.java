@@ -29,7 +29,7 @@ public class CodeGenerator {
         CodeGenerator g = new CodeGenerator();
         boolean startWithI = false;
         String packageName = "com.example.uums.provider";
-        String[] tableName = {"z"};
+        String[] tableName = {"t_test_user"};
         g.generateByTables(startWithI, packageName, tableName);
     }
 
