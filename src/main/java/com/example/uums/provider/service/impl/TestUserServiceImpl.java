@@ -45,7 +45,7 @@ public class TestUserServiceImpl extends ServiceImpl<TestUserMapper, TestUser> i
         testUser.setName("pengli");
         baseMapper.insert(testUser1);
 
-        throw new RuntimeException("抛出异常");
+//        throw new RuntimeException("抛出异常");
 
     }
 
