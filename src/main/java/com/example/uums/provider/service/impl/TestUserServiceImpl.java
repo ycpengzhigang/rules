@@ -37,15 +37,20 @@ public class TestUserServiceImpl extends ServiceImpl<TestUserMapper, TestUser> i
         testUser.setEmail("ycpengzhigang@163.com");
         testUser.setName("zhigang");
         baseMapper.update(testUser, new LambdaUpdateWrapper<TestUser>().eq(TestUser::getName, testUser.getName()));
-
-
-        TestUser testUser1 = new TestUser();
-        testUser.setAge(100);
+        TestUser testUser2 = new TestUser();
+        testUser.setAge(30);
         testUser.setEmail("ycpengzhigang@163.com");
-        testUser.setName("pengli");
-        baseMapper.insert(testUser1);
+        testUser.setName("hello world");
+        baseMapper.update(testUser2, new LambdaUpdateWrapper<TestUser>().eq(TestUser::getAge, testUser2.getAge()));
 
-//        throw new RuntimeException("抛出异常");
+
+//        TestUser testUser1 = new TestUser();
+//        testUser.setAge(100);
+//        testUser.setEmail("ycpengzhigang@163.com");
+//        testUser.setName("pengli");
+//        baseMapper.insert(testUser1);
+
+        throw new RuntimeException("抛出异常");
 
     }
 
