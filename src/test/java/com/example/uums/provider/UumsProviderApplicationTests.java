@@ -1,6 +1,6 @@
 package com.example.uums.provider;
 
-import com.example.uums.provider.service.Printer;
+import com.example.uums.provider.service.TestUserService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -8,15 +8,16 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class UumsProviderApplicationTests {
 
+
     @Autowired
-    private Printer printer;
+    TestUserService testUserService;
 
     void contextLoads() {
     }
 
     @Test
     public void testTransaction() {
-        printer.print();
+        testUserService.insertSysUser();
     }
 
 }
